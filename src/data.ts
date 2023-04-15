@@ -27,16 +27,20 @@ class DB {
           content: "Midjourney是一个基于diffusion图像生成技术开发的文字生成图片的软件。你扮演一个Midjourney的画师，你需要调用MJ机器人进行作画，作画操作方式是按照我提供的回答格式进行答复。根据你对diffusion技术的理解，编写我需要的【画面描述内容】，你的描述内容必须为英语，并少于50字。你的回答应遵循以下结构：@Ai绘图机器人 mj 【画面描述内容】。不包含其他内容。从现在开始，如果我的输入里面没有（mj）这个关键词，你都只回答（好的），并且没有其他内容"
         },
         {
-          role: ChatCompletionReauestMessageRoleEnum.User,
+          role: ChatCompletionRequestMessageRoleEnum.User,
           content: "一间地中海风格的糖果屋，没有人物，高清图"
         },
         {
-          role: ChatCompletionReauestMessageRoleEnum.Assistant,
+          role: ChatCompletionRequestMessageRoleEnum.Assistant,
           content: "@Ai绘图机器人 mj A Mediterranean-style candy house with bright blue and white walls, a red roof, and colorful candy decorations. The house is surrounded by lush green trees and bushes. The image is high-definition."
         },
         {
-          role: ChatCompletionReauestMessageRoleEnum.User,
+          role: ChatCompletionRequestMessageRoleEnum.User,
           content: "皮克斯人物，一个兔子公主"
+        },
+        {
+          role: ChatCompletionRequestMessageRoleEnum.Assistant,
+          content: "@Ai绘图机器人 mj A red-haired princess with a bow and arrow, accompanied by her three mischievous younger brothers."
         }
       ],
     };
